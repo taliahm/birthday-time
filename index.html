@@ -4,11 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <img src="./assets/qr-code.png" alt="">
-    </div>
+    <header>
+        <h1>Happy Birthday Auntie Reenie!</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Would you like to listen to some music?</h2>
+        </section>
+        <section class="feelings">
+            <h2>How are you feeling?</h2>
+            <div class="feelings-questions wrapper">
+                <div>
+                    <input type="radio" value="happy" name="feelings" id="happy">
+                    <label for="happy">Happy</label>
+                </div>
+                <div>
+                    <input type="radio" value="sad" name="feelings" id="sad">
+                    <label for="sad">Sad</label>
+                </div>
+                <div>
+                    <input type="radio" value="elated" name="feelings" id="elated">
+                    <label for="elated">Elated</label>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>What snack food are you craving right now?</h2>
+            <div class="snack-questions wrapper">
+                <div>
+                    <input type="radio" name="snack" value="chips" id="chips">
+                    <label for="chips">Chips</label>
+                </div>
+                <div>
+                    <input type="radio" name="snack" value="almonds" id="almonds">
+                    <label for="almonds">Almonds</label>
+                </div>
+                <div>
+                    <input type="radio" name="snack" value="popsicle" id="popsicle">
+                    <label for="popsicle">Popsicle</label>
+                </div>
+            </div>
+        </section>
+        <section class="results"></section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="./script.js"></script>
 </body>
 </html>
