@@ -1,0 +1,7 @@
+div {
+    width: 50%;
+}
+div img {
+    max-width: 100%;
+    display: block;
+}
