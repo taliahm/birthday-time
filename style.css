@@ -8,8 +8,15 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+/* #c9a9b1 */
+/* 	#296148 */
+/* 	#4acfe7 */
+/* 	#09889e */
+/* 	#ca158b */
+
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #056473;
 }
 
 .wrapper {
@@ -18,12 +25,17 @@ body {
     margin: 0 auto;
 }
 
+h2 {
+    color: #f6f7d2;
+}
+
 header {
     height: 70vh;
     background-image: url('./assets/header-two.jpg');
     background-size: cover;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -33,10 +45,54 @@ header h1 {
     letter-spacing: 3px;
     font-size: 72px;
     color: white;
-    text-shadow: 1px 2px 2px blue;
+    text-shadow: 1px 2px 2px #ca158b;
     text-align: center;
+    margin: 0;
 }
 
+header h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 2px 2px #ca158b;
+    margin: 20px 0 0 0;
+}
+
+.holdTitle {
+    background: linear-gradient(to top, rgba(250, 250, 250, 0), rgba(250, 250, 250, 0.1), rgba(250, 250, 250, 0));
+    padding: 40px;
+}
+
+.feelings {
+    background: #076a80;
+    padding: 70px 0 150px 0;
+}
+
+.snack {
+    background: #29bfd6;
+    padding: 70px 0 150px 0;
+}
+
+.feelings h2,
+.snack h2 {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: 40px;
+}
+
+.far, .fas {
+    color: white;
+    font-size: 80px;
+    transition: all 0.3s ease-out;
+}
+
+input[type=radio] {
+    visibility: hidden;
+}
+
+input[type=radio]:checked + label .far,
+input[type=radio]:checked + label .fas  {
+    color: #ca158b;
+}
 
 .feelings-questions, .snack-questions {
     display: grid;
@@ -53,13 +109,60 @@ header h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 70px 0;
 }
 
 .results .img-container {
-    width: 35%;
+    width: 20%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .results .img-container {
+        width: 40%;
+    }
 }
 
 .results img {
     width: 100%;
     display: block;
+}
+
+.results a {
+    font-size: 30px;
+    display: block;
+    padding: 40px 0;
+    text-decoration: none;
+    color: #f6f7d2;
+}
+
+.results a:hover,
+footer a:hover {
+    color: #ca158b;
+}
+
+
+footer {
+    padding: 10px 0;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+
+    margin: 0;
+}
+
+footer li {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 20px;
+    font-size: 10px;
+}
+footer a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #f6f7d2;
 }
